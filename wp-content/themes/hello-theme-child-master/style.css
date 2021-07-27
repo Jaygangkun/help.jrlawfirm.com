@@ -1,0 +1,215 @@
+/* 
+Theme Name: Hello Elementor Child
+Theme URI: https://github.com/elementor/hello-theme/
+Description: Hello Elementor Child is a child theme of Hello Elementor, created by Elementor team
+Author: Elementor Team
+Author URI: https://elementor.com/
+Template: hello-elementor
+Version: 1.0.1
+Text Domain: hello-elementor-child
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+*/
+
+/*
+    Add your custom styles here
+*/
+
+.elementor-widget-nav-menu .elementor-nav-menu--main:not(.e--pointer-framed) .elementor-item:before, .elementor-widget-nav-menu .elementor-nav-menu--main:not(.e--pointer-framed) .elementor-item:after {
+    background-color: transparent !important;
+}
+
+.call1800{
+    max-width: 326px;  
+	margin: 0 auto;
+}
+
+.call1800 h2{
+   color: #ffffff;
+   font-family: 'Open Sans';
+   text-align: center;
+   font-size: 28px;
+   margin:0;
+   margin-bottom: 5px;
+}
+
+.call1800 h2 strong{
+    font-weight: 700;
+}
+
+.call1800 a{
+    color:#ffffff;
+    font-family: 'Open Sans';
+    text-align: center;
+    font-size: 17px;
+    margin:0;
+}
+
+.call1800 a:hover{
+	color:#ffffff;
+}
+
+/*span.callMarker{
+	background-color:#FA9D1C;
+	color:#ffffff;
+	font-weight:700;
+	word-break: break-word;
+}*/
+
+span.callMarker{
+	color:#FA9D1C;
+	text-decoration:underline;
+	font-weight:500;
+	word-break: break-word;
+}
+
+span.orangeMarker{
+	background-color:#FA9D1C;
+	color:#282828;
+	font-weight:600;
+	word-break: break-word;
+}
+
+i.fas.fa-square-full {
+    vertical-align: middle;
+}
+
+span.underline {
+    border-bottom: 5px solid #FA9D1C;
+}
+
+.bodyText a{
+	color:#FA9D1C;
+	text-decoration:underline !important;
+}
+
+.bodyText a:hover{
+    color:#d4881d;
+}
+
+input#form-field-agreeTerms-0 {
+    vertical-align: middle;
+}
+
+.splitTitles span.orangeMarker {
+    margin-right: 5px;
+}
+
+span.attorney {
+    background: #fa9d1d;
+	color:#ffffff !important;
+}
+span.attorney i.fas.fa-phone-alt {
+    font-size: 38px;
+    vertical-align: top;
+    padding: 8px 10px 0px 5px;
+	color: #ffffff;
+}
+
+span.rr{
+	font-size: 30px;
+	vertical-align: bottom;
+}
+
+.markerCTA span.attorney {
+    color: #ffffff;
+    font-weight: 700;
+	padding-right: 10px;
+}
+
+.markerCTA span.attorney i.fas.fa-phone-alt {
+	font-size: 18px;
+    vertical-align: top;
+    padding: 5px 10px 0px 10px;
+    color: #ffffff;
+}
+
+.leadForm a{
+    color:#fa9d1c;
+    text-decoration: underline;
+}
+
+.FooterleadForm a{
+	color:#fa9d1c;
+    text-decoration: underline;
+}
+
+.FooterleadForm input#form-field-agreeTerms-0 + label {
+    color: #282828;
+}
+
+input#form-field-agreeTerms-0 + label {
+    color: #282828;
+}
+
+.lp-list li{
+	list-style-type: square;
+}
+
+@media (max-width:980px){
+	span.underline {
+		margin-bottom: 2px;
+		display: inline-block;
+	}
+    .splitTitles span.orangeMarker{
+        display: block;
+        width:60%;
+    }	
+	.splitTitles .elementor-text-editor {
+		font-size: 17px !important;
+	}
+    .smallerTitle span.callMarker{
+        font-size:42px;
+    }
+	.smallerTitle a {
+		display: block;
+	}
+	span.attorney{
+		font-size:0.8em;	
+	}
+	span.attorney i.fas.fa-phone-alt {
+		font-size: 30px;
+		vertical-align: top;
+		padding: 15px 10px 0px 5px;
+		color: #ffffff;
+	}
+	.markerCTA span.attorney{
+		padding-top: 5px;
+    	padding-bottom: 5px;
+	}
+	
+}
+
+
+/* Floating Buttons */
+
+@media (min-width:981px){
+	.floatDesktop {
+		position: fixed;
+		right: 0;
+		bottom: 10%;
+		z-index: 99999;
+		display:block;
+	}
+	.floatDesktop img {
+		max-width: 100px !important;
+	}
+	
+	.floatMobile {display:none;}
+}
+
+@media (max-width:980px){
+	.floatMobile {
+		position: fixed;
+		right: 0;
+		bottom: 2%;
+		z-index: 99999;
+		display:block;
+	}
+	.floatMobile img {
+		max-width: 70px !important;
+	}
+	
+	.floatDesktop {display:none;}
+}
